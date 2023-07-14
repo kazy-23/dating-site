@@ -1,13 +1,193 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+  --c1: #F8F1F1;
+  --c2: #E8AA42;
+  --c3: #E57C23;
+  --c4: #025464;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--c4);
+  color: var(--c1);
+  font-size: 30px;
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+  padding-inline: 0;
+  overflow: hidden;
+  background-color: var(--c2);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-size: 30px;
+  transition: 1s;
+}
+
+nav div {
+  float: right;
+}
+
+nav div a {
+  display: block;
+  color: var(--c1);
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  transition: 1s;
+}
+
+nav div p {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 30px;
+  padding-right: 0;
+  text-decoration: none;
+  margin: 0;
+}
+
+nav div a:hover {
+  background-color: var(--c3);
+  color: var(--c2);
+}
+
+main {
+  margin-top: 100px;
+}
+
+h1 {
+  font-size: 90px;
+}
+
+input, textarea {
+  border-color: transparent;
+  border-bottom: 2px solid var(--c2);
+  background-color: transparent;
+  color: var(--c1);
+  font-size: 30px;
+  margin: 20px;
+  padding: 10px;
+  outline: none;
+  width: 350px;
+  font-family: 'Poppins', sans-serif;
+}
+
+textarea:focus,
+textarea:active,
+input:focus,
+input:active {
+  border-color: transparent;
+  border-bottom: 2px solid var(--c3);
+}
+
+textarea::placeholder,
+input::placeholder {
+  color: var(--c2);
+}
+
+a {
+  color: var(--c2);
+  transition: 1s;
+}
+a:hover {
+  color: var(--c3);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header p img {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.logo {
+  float: left;
+}
+
+.login {
+  text-align: center;
+}
+
+.button {
+  text-decoration: none;
+  display: inline-block;
+  color: var(--c1);
+  background-color: var(--c2);
+  padding: 15px;
+  border-radius: 10px;
+  margin: 20px;
+  transition: 1s;
+}
+
+.button:hover {
+  background-color: var(--c3);
+  color: var(--c2);
+}
+
+.container {
+  margin:auto;
+  width: 400px;
+}
+
+.swiper img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.swiper div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.swiper div p {
+  text-align: center;
+  flex: 50%;
+}
+
+.swiper p b {
+  color: var(--c2);
+}
+
+.back {
+  text-align: center;
+  font-size: 40px;
+  color: var(--c2);
+}
+
+.back p a {
+  text-decoration: none;
+}
+
+.chat-list div {
+  display: flex;
+  align-items: center;
+  background-color: var(--c2);
+  padding: 10px;
+  border-radius: 15px;
+  width: 100%;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 1s;
+  margin-bottom: 10px;
+}
+
+.chat-list div:hover {
+  background-color: var(--c3);
+}
+
+.chat-list div img{
+  height: 40px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  margin-right: 10px;
 }
